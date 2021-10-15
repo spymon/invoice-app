@@ -1,4 +1,4 @@
-export const designSystem = {
+const designSystem = {
   colors: {
     purple: '#7c5dfa',
     lightPurple: '#9277FF',
@@ -12,6 +12,7 @@ export const designSystem = {
     fadedRed: '#FF9797',
     WhiteBg: '#F8F8FB',
     darkBlue: '#141625',
+    white: '#ffffff',
   },
   fonts: {
     h1: {
@@ -58,3 +59,5 @@ export const designSystem = {
     },
   },
 }
+
+export default designSystem
