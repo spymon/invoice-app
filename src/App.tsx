@@ -1,8 +1,19 @@
-function App() {
+import { useState } from 'react'
+import { ThemeProvider } from 'styled-components'
+import theme from './design/themes'
+import GlobalStyles from './design/GlobalStyles'
+
+const App: React.FC = () => {
+  const [mode, setMode] = useState(true)
+
+  const handleMode = (): void => {
+    setMode(!mode)
+  }
+
   return (
-    <div>
-      <p>hi</p>
-    </div>
+    <ThemeProvider theme={mode ? theme.light : theme.dark}>
+      <GlobalStyles />
+    </ThemeProvider>
   )
 }
 
