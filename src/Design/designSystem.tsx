@@ -12,7 +12,9 @@ const designSystem = {
     fadedRed: '#FF9797',
     WhiteBg: '#F8F8FB',
     darkBlue: '#141625',
+    grayBlue: '#373B53',
     white: '#ffffff',
+    fadedGrayBlue: '#858BB2',
   },
   fonts: {
     h1: {
@@ -43,14 +45,14 @@ const designSystem = {
       lineHeight: 15,
       letterSpacing: -0.25,
     },
-    body_1: {
+    p1: {
       fontFamily: 'Spartan, sans-serif',
       fontWeight: '500',
       fontSize: 12,
       lineHeight: 15,
       letterSpacing: -0.25,
     },
-    body_2: {
+    p2: {
       fontFamily: 'Spartan, sans-serif',
       fontWeight: '500',
       fontSize: 11,
@@ -58,6 +60,7 @@ const designSystem = {
       letterSpacing: -0.23,
     },
   },
+  transition: 'background-color 0.5s ease, color 0.5s ease, fill 0.5s ease',
 }
 
 export default designSystem
