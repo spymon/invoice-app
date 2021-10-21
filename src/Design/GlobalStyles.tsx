@@ -6,6 +6,7 @@ const GlobalStyle = createGlobalStyle`
   *::before,
   *::after {
     box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
   }
 
   /* Remove default margin */
