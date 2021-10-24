@@ -1,7 +1,7 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import NewInvoiceButton from './NewInvoiceButton'
 
-export const NewInvoiceBtn = styled(NewInvoiceButton)`
+export const button = css`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,9 +10,13 @@ export const NewInvoiceBtn = styled(NewInvoiceButton)`
   margin: 0;
   border: none;
   border-radius: 24px;
+  cursor: pointer;
+`
+
+export const NewInvoiceBtn = styled(NewInvoiceButton)`
+  ${button}
   background-color: ${props => props.theme.designSystem.colors.purple};
   transition: ${props => props.theme.designSystem.transition};
-  cursor: pointer;
 
   h3 {
     color: ${props => props.theme.designSystem.colors.white};
@@ -22,8 +26,8 @@ export const NewInvoiceBtn = styled(NewInvoiceButton)`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 32px;
-    height: 32px;
+    min-width: 32px;
+    min-height: 32px;
     background-color: ${props => props.theme.designSystem.colors.white};
     border-radius: 50%;
     margin-right: 16px;
