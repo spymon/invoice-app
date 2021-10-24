@@ -8,8 +8,6 @@ export const Container = styled(ItemWrapper)`
   display: ${props => (props.display ? props.display : 'flex')};
   flex-direction: ${props =>
     props.flexDirection ? props.flexDirection : 'column'};
-  justify-content: ${props =>
-    props.JustifyContent ? props.JustifyContent : 'center'};
   align-items: ${props => (props.alignItems ? props.alignItems : 'center')};
   background-color: ${props => props.theme.backgroundColor};
   transition: ${props => props.theme.designSystem.transition};
