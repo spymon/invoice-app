@@ -8,6 +8,8 @@ interface Theme {
   invoiceBackgroundColor: string
   navbarBackgroundColor: string
   themeModeFillColor: string
+  mainFontColor: string
+  secondaryFontColor: string
 }
 
 const lightTheme: Theme = {
@@ -18,6 +20,8 @@ const lightTheme: Theme = {
   invoiceBackgroundColor: DS.colors.fadedDarkBlue,
   navbarBackgroundColor: DS.colors.grayBlue,
   themeModeFillColor: DS.colors.fadedBlue,
+  mainFontColor: DS.colors.darkerBlue,
+  secondaryFontColor: DS.colors.fadedDarkBlue,
 }
 
 const darkTheme: Theme = {
@@ -28,6 +32,8 @@ const darkTheme: Theme = {
   invoiceBackgroundColor: DS.colors.darkerPurple,
   navbarBackgroundColor: DS.colors.darkerPurple,
   themeModeFillColor: DS.colors.fadedGrayBlue,
+  mainFontColor: DS.colors.white,
+  secondaryFontColor: DS.colors.fadedLightBlue,
 }
 
 const theme = {
