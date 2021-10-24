@@ -4,7 +4,7 @@ import theme from './design/themes'
 import GlobalStyles from './design/GlobalStyles'
 import Navbar from './components/Navbar'
 import { Container } from './components/helpers/Container'
-import { ItemWrapper as Wrapper } from './components/helpers/ItemWrapper'
+import InvoiceContainer from './components/InvoiceContainer'
 
 const App: React.FC = () => {
   const [themeMode, setThemeMode] = useState(false)
@@ -18,7 +18,7 @@ const App: React.FC = () => {
       <GlobalStyles />
       <Container>
         <Navbar themeMode={themeMode} handleThemeMode={handleThemeMode} />
-        <Wrapper>{/* invoice component */}</Wrapper>
+        <InvoiceContainer />
       </Container>
     </ThemeProvider>
   )
