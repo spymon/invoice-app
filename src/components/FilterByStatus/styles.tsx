@@ -27,9 +27,9 @@ const FilterIcon: React.FC<Props> = ({ className }) => {
       <path
         d="M1 1l4.228 4.228L9.456 1"
         stroke="#7C5DFA"
-        stroke-width="2"
+        strokeWidth="2"
         fill="none"
-        fill-rule="evenodd"
+        fillRule="evenodd"
       />
     </svg>
   )
