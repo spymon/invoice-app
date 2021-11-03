@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { ItemWrapper } from '../helpers/ItemWrapper'
 
 export const StyledNavbar = styled.nav`
-  position: fixed;
+  position: sticky;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

@@ -10,6 +10,9 @@ interface Theme {
   themeModeFillColor: string
   mainFontColor: string
   secondaryFontColor: string
+  filterDropdownBackgroundColor: string
+  filterDropdownBoxShadowColor: string
+  filterDropdownInputBackgroundColor: string
 }
 
 const lightTheme: Theme = {
@@ -22,6 +25,9 @@ const lightTheme: Theme = {
   themeModeFillColor: DS.colors.fadedBlue,
   mainFontColor: DS.colors.darkerBlue,
   secondaryFontColor: DS.colors.fadedDarkBlue,
+  filterDropdownBackgroundColor: DS.colors.white,
+  filterDropdownBoxShadowColor: DS.boxShadow.light,
+  filterDropdownInputBackgroundColor: DS.colors.fadedLightBlue,
 }
 
 const darkTheme: Theme = {
@@ -34,6 +40,9 @@ const darkTheme: Theme = {
   themeModeFillColor: DS.colors.fadedGrayBlue,
   mainFontColor: DS.colors.white,
   secondaryFontColor: DS.colors.fadedLightBlue,
+  filterDropdownBackgroundColor: DS.colors.darkPurple,
+  filterDropdownBoxShadowColor: DS.boxShadow.dark,
+  filterDropdownInputBackgroundColor: DS.colors.darkerPurple,
 }
 
 const theme = {
