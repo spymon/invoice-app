@@ -5,6 +5,7 @@ import GlobalStyles from './design/GlobalStyles'
 import Navbar from './components/Navbar'
 import { Container } from './components/helpers/Container'
 import InvoiceContainer from './components/InvoiceContainer'
+import { Main } from './components/helpers/Main'
 
 const App: React.FC = () => {
   const [themeMode, setThemeMode] = useState(false)
@@ -18,7 +19,9 @@ const App: React.FC = () => {
       <GlobalStyles />
       <Container>
         <Navbar themeMode={themeMode} handleThemeMode={handleThemeMode} />
-        <InvoiceContainer />
+        <Main>
+          <InvoiceContainer />
+        </Main>
       </Container>
     </ThemeProvider>
   )
