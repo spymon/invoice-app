@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useOutsideClicker } from '../../hooks/useOutsideClicker'
 import arrow from './../../assets/icon-arrow-down.svg'
 import { Dropdown, DropdownMenu } from './styles'
 
@@ -7,18 +7,15 @@ interface Props {
 }
 
 const FilterDropdownMenu: React.FC<Props> = () => {
-  const [isStatusFilterOpen, setIsStatusFilterOpen] = useState(false)
-  console.log(isStatusFilterOpen)
-
-  const filterStatusToggle = () => setIsStatusFilterOpen(!isStatusFilterOpen)
+  const { visible, setVisible, ref } = useOutsideClicker(false)
 
   return (
-    <Dropdown isStatusFilterOpen={isStatusFilterOpen}>
-      <button onClick={() => filterStatusToggle()}>
+    <Dropdown ref={ref} visible={visible}>
+      <button onClick={() => setVisible(!visible)}>
         Filter<span>&nbsp;by status</span>
         <img src={arrow} alt="" />
       </button>
-      <DropdownMenu isStatusFilterOpen={isStatusFilterOpen}>
+      <DropdownMenu visible={visible}>
         <label>
           <input type="checkbox" />
           <span></span>
