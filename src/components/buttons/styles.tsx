@@ -23,9 +23,8 @@ export const NewInvoiceBtn = styled(NewInvoiceButton)`
   }
 
   div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
     min-width: 32px;
     min-height: 32px;
     background-color: ${props => props.theme.designSystem.colors.white};

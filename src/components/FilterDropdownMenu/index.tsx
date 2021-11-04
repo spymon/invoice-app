@@ -1,6 +1,7 @@
 import { useOutsideClicker } from '../../hooks/useOutsideClicker'
 import arrow from './../../assets/icon-arrow-down.svg'
 import { Dropdown, DropdownMenu } from './styles'
+import checked from './../../assets/icon-check.svg'
 
 interface Props {
   onClick?: () => any
@@ -18,17 +19,23 @@ const FilterDropdownMenu: React.FC<Props> = () => {
       <DropdownMenu visible={visible}>
         <label>
           <input type="checkbox" />
-          <span></span>
+          <span>
+            <img src={checked} alt="" />
+          </span>
           <p>Draft</p>
         </label>
         <label>
           <input type="checkbox" />
-          <span></span>
+          <span>
+            <img src={checked} alt="" />
+          </span>
           <p>Pending</p>
         </label>
         <label>
           <input type="checkbox" />
-          <span></span>
+          <span>
+            <img src={checked} alt="" />
+          </span>
           <p>Paid</p>
         </label>
       </DropdownMenu>

@@ -61,7 +61,7 @@ const designSystem = {
     },
   },
   transition:
-    'background-color 0.5s ease, color 0.5s ease, fill 0.5s ease, transform 0.5s ease, border 0.5s ease',
+    'background-color 0.3s ease, color 0.3s ease, fill 0.3s ease, transform 0.3s ease, border 0.3s ease, opacity 0.3s ease',
   boxShadow: {
     light: '0 10px 20px rgba(72, 84, 159, 0.25)',
     dark: '0 10px 20px rgba(0, 0, 0, 0.25)',

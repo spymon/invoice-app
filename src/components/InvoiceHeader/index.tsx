@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { NewInvoiceBtn } from '../buttons/styles'
 import FilterDropdownMenu from '../FilterDropdownMenu'
 import { H1, P2 } from '../helpers/FontComponents/styles'

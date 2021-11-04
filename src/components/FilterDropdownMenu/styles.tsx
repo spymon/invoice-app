@@ -68,8 +68,12 @@ export const DropdownMenu = styled.div<Props>`
     display: flex;
     align-items: center;
     width: 100%;
+    cursor: pointer;
 
     span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 16px;
       height: 16px;
       border: 1px solid
@@ -78,10 +82,25 @@ export const DropdownMenu = styled.div<Props>`
       background-color: ${props =>
         props.theme.filterDropdownInputBackgroundColor};
       transition: ${props => props.theme.designSystem.transition};
+
+      img {
+        opacity: 0;
+        transition: ${props => props.theme.designSystem.transition};
+      }
     }
 
     &:hover > span {
       border: 1px solid ${props => props.theme.designSystem.colors.purple};
+    }
+
+    input[type='checkbox']:checked + span {
+      background-image: url('./../../assets/icon-check.svg');
+      border: 1px solid ${props => props.theme.designSystem.colors.purple};
+      background-color: ${props => props.theme.designSystem.colors.purple};
+
+      img {
+        opacity: 1;
+      }
     }
   }
 
