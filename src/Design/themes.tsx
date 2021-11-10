@@ -1,26 +1,10 @@
+import { Theme } from '../types/interfaces'
 import DS from './designSystem'
-
-interface Theme {
-  designSystem: {}
-  backgroundColor: string
-  primaryColor: string
-  secondaryColor: string
-  invoiceBackgroundColor: string
-  navbarBackgroundColor: string
-  themeModeFillColor: string
-  mainFontColor: string
-  secondaryFontColor: string
-  filterDropdownBackgroundColor: string
-  filterDropdownBoxShadowColor: string
-  filterDropdownInputBackgroundColor: string
-}
 
 const lightTheme: Theme = {
   designSystem: DS,
   backgroundColor: DS.colors.WhiteBg,
-  primaryColor: DS.colors.darkerBlue,
-  secondaryColor: DS.colors.fadedDarkBlue,
-  invoiceBackgroundColor: DS.colors.fadedDarkBlue,
+  invoiceBackgroundColor: DS.colors.white,
   navbarBackgroundColor: DS.colors.grayBlue,
   themeModeFillColor: DS.colors.fadedBlue,
   mainFontColor: DS.colors.darkerBlue,
@@ -28,13 +12,14 @@ const lightTheme: Theme = {
   filterDropdownBackgroundColor: DS.colors.white,
   filterDropdownBoxShadowColor: DS.boxShadow.light,
   filterDropdownInputBackgroundColor: DS.colors.fadedLightBlue,
+  fadedBlue_fadedLightBlue: DS.colors.fadedBlue,
+  fadedDarkBlue_white: DS.colors.fadedDarkBlue,
+  grayBlue_fadedLightBlue: DS.colors.grayBlue,
 }
 
 const darkTheme: Theme = {
   designSystem: DS,
   backgroundColor: DS.colors.darkBlue,
-  primaryColor: DS.colors.white,
-  secondaryColor: DS.colors.fadedLightBlue,
   invoiceBackgroundColor: DS.colors.darkerPurple,
   navbarBackgroundColor: DS.colors.darkerPurple,
   themeModeFillColor: DS.colors.fadedGrayBlue,
@@ -43,6 +28,9 @@ const darkTheme: Theme = {
   filterDropdownBackgroundColor: DS.colors.darkPurple,
   filterDropdownBoxShadowColor: DS.boxShadow.dark,
   filterDropdownInputBackgroundColor: DS.colors.darkerPurple,
+  fadedBlue_fadedLightBlue: DS.colors.fadedLightBlue,
+  fadedDarkBlue_white: DS.colors.white,
+  grayBlue_fadedLightBlue: DS.colors.fadedLightBlue,
 }
 
 const theme = {
