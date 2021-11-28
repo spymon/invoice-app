@@ -20,7 +20,7 @@ export const Dropdown = styled.div<Props>`
     border-radius: 8px;
     cursor: pointer;
 
-    @media (max-width: 375px) {
+    @media (max-width: 600px) {
       margin-right: 16px;
     }
 
@@ -30,13 +30,13 @@ export const Dropdown = styled.div<Props>`
         props.visible ? 'rotate(180deg)' : 'rotate(0deg)'};
       transition: ${props => props.theme.designSystem.transition};
 
-      @media (max-width: 375px) {
+      @media (max-width: 600px) {
         margin-right: 12px;
       }
     }
 
     span {
-      @media (max-width: 375px) {
+      @media (max-width: 600px) {
         display: none;
       }
     }
@@ -45,6 +45,7 @@ export const Dropdown = styled.div<Props>`
 
 export const DropdownMenu = styled.div<Props>`
   position: absolute;
+  z-index: 100;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -76,8 +77,7 @@ export const DropdownMenu = styled.div<Props>`
       align-items: center;
       width: 16px;
       height: 16px;
-      border: 1px solid
-        ${props => props.theme.filterDropdownInputBackgroundColor};
+      border: 1px solid transparent;
       border-radius: 2px;
       background-color: ${props =>
         props.theme.filterDropdownInputBackgroundColor};

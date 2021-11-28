@@ -16,14 +16,14 @@ export const StyledNavbar = styled.nav`
   border-bottom-right-radius: 20px;
   transition: ${props => props.theme.designSystem.transition};
 
-  @media (max-width: 768px) {
+  @media (max-width: 1023px) {
     flex-direction: row;
     height: 80px;
     width: 100%;
     border-radius: 0;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 550px) {
     height: 76px;
   }
 `
@@ -55,7 +55,7 @@ export const LogoWrapper = styled.div`
     transform: translate(-50%, -50%) scale(1.44);
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1023px) {
     width: 80px;
     height: 80px;
 
@@ -64,7 +64,7 @@ export const LogoWrapper = styled.div`
     }
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 550px) {
     width: 76px;
     height: 76px;
 
@@ -91,7 +91,7 @@ export const NavbarWrapper = styled(ItemWrapper)`
     margin: 24px 0;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1023px) {
     flex-direction: row;
 
     img {
@@ -106,7 +106,7 @@ export const Rectangle = styled.div`
   width: 100%;
   background-color: #494e6e;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1023px) {
     height: 100%;
     width: 1px;
   }

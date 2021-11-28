@@ -18,7 +18,7 @@ export const StyledThemeIcon = styled(ThemeIcon)`
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1023px) {
     margin: 0 32px;
   }
 `
