@@ -9,20 +9,17 @@ export interface IInvoice {
   clientName: string
   clientEmail: string
   status: Status
-  senderAddress: {
-    street: string
-    city: string
-    postCode: string
-    country: string
-  }
-  clientAddress: {
-    street: string
-    city: string
-    postCode: string
-    country: string
-  }
+  senderAddress: Address
+  clientAddress: Address
   items: Item[]
   total: number
+}
+
+interface Address {
+  street: string
+  city: string
+  postCode: string
+  country: string
 }
 
 interface Item {
