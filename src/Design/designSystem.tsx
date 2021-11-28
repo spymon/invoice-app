@@ -15,6 +15,8 @@ const designSystem = {
     grayBlue: '#373B53',
     white: '#ffffff',
     fadedGrayBlue: '#858BB2',
+    green: '#33D69F',
+    orange: '#FF8F00',
   },
   fonts: {
     h1: {
