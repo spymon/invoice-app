@@ -6,6 +6,7 @@ import Navbar from './components/Navbar'
 import { Container } from './components/helpers/Container'
 import InvoiceContainer from './components/InvoiceContainer'
 import { Main } from './components/helpers/Main'
+import InvoiceForm from './components/InvoiceForm'
 
 const App: React.FC = () => {
   const [themeMode, setThemeMode] = useState(false)
@@ -18,6 +19,7 @@ const App: React.FC = () => {
     <ThemeProvider theme={themeMode ? theme.light : theme.dark}>
       <GlobalStyles />
       <Container>
+        <InvoiceForm />
         <Navbar themeMode={themeMode} handleThemeMode={handleThemeMode} />
         <Main>
           <InvoiceContainer />
