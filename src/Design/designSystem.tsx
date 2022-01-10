@@ -33,6 +33,13 @@ const designSystem = {
       lineHeight: '22px',
       letterSpacing: '-0.63px',
     },
+    h2_2: {
+      fontFamily: 'Spartan, sans-serif',
+      fontWeight: '600',
+      fontSize: '24px',
+      lineHeight: '32px',
+      letterSpacing: '-0.5px',
+    },
     h3_1: {
       fontFamily: 'Spartan, sans-serif',
       fontWeight: '600',

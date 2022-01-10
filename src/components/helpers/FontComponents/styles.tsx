@@ -20,6 +20,16 @@ export const headingTwo = css`
   transition: ${props => props.theme.designSystem.transition};
 `
 
+export const headingTwo1 = css`
+  font-size: ${props => props.theme.designSystem.fonts.h2_2.fontSize};
+  font-weight: ${props => props.theme.designSystem.fonts.h2_2.fontWeight};
+  line-height: ${props => props.theme.designSystem.fonts.h2_2.lineHeight};
+  letter-spacing: ${props => props.theme.designSystem.fonts.h2_2.letterSpacing};
+  text-transform: capitalize;
+  color: ${props => props.theme.designSystem.colors.white};
+  transition: ${props => props.theme.designSystem.transition};
+`
+
 export const headingThree1 = css`
   font-size: ${props => props.theme.designSystem.fonts.h3_1.fontSize};
   font-weight: ${props => props.theme.designSystem.fonts.h3_1.fontWeight};

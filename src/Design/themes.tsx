@@ -15,6 +15,7 @@ const lightTheme: Theme = {
   fadedBlue_fadedLightBlue: DS.colors.fadedBlue,
   fadedDarkBlue_white: DS.colors.fadedDarkBlue,
   grayBlue_fadedLightBlue: DS.colors.grayBlue,
+  white_darkBlue: DS.colors.white,
 }
 
 const darkTheme: Theme = {
@@ -31,6 +32,7 @@ const darkTheme: Theme = {
   fadedBlue_fadedLightBlue: DS.colors.fadedLightBlue,
   fadedDarkBlue_white: DS.colors.white,
   grayBlue_fadedLightBlue: DS.colors.fadedLightBlue,
+  white_darkBlue: DS.colors.darkBlue,
 }
 
 const theme = {

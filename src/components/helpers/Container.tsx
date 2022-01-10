@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { ItemWrapper } from './ItemWrapper'
 
 export const Container = styled(ItemWrapper)`
+  position: relative;
   width: 100%;
   min-height: 100vh;
   display: flex;

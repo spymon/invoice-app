@@ -43,4 +43,5 @@ export interface Theme {
   fadedBlue_fadedLightBlue: string
   fadedDarkBlue_white: string
   grayBlue_fadedLightBlue: string
+  white_darkBlue: string
 }
