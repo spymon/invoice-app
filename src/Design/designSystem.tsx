@@ -8,7 +8,7 @@ const designSystem = {
     fadedLightBlue: '#DFE3FA',
     fadedDarkBlue: '#888EB0',
     darkerBlue: '#0C0E16',
-    red: '#EC5757',
+    danger: '#EC5757',
     fadedRed: '#FF9797',
     WhiteBg: '#F8F8FB',
     darkBlue: '#141625',
