@@ -2,6 +2,7 @@ import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
   /* Box sizing rules */
+
   *,
   *::before,
   *::after {
@@ -52,7 +53,6 @@ const GlobalStyle = createGlobalStyle`
     max-width: 100%;
     display: block;
   }
-
   /* Inherit fonts for inputs and buttons */
   input,
   button,
@@ -79,3 +79,4 @@ const GlobalStyle = createGlobalStyle`
 `
 
 export default GlobalStyle
+
