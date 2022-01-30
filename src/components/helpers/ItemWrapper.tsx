@@ -1,4 +1,4 @@
-interface Props {
+interface IProps {
   className?: string
   display?: string
   flexDirection?: string
@@ -6,8 +6,9 @@ interface Props {
   JustifyContent?: string
   maxWidth?: string
   margin?: string
+  gap?: string
 }
 
-export const ItemWrapper: React.FC<Props> = ({ className, children }) => {
+export const ItemWrapper: React.FC<IProps> = ({ className, children }) => {
   return <div className={className}>{children}</div>
 }

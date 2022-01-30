@@ -3,11 +3,11 @@ import arrow from './../../assets/icon-arrow-down.svg'
 import { Dropdown, DropdownMenu } from './styles'
 import checked from './../../assets/icon-check.svg'
 
-interface Props {
+interface IProps {
   onClick?: () => any
 }
 
-const FilterDropdownMenu: React.FC<Props> = () => {
+const FilterDropdownMenu: React.FC<IProps> = () => {
   const { visible, setVisible, ref } = useOutsideClicker(false)
 
   return (

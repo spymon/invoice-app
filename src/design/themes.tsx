@@ -1,7 +1,7 @@
-import { Theme } from '../types/interfaces'
+import { ITheme } from '../types/interfaces'
 import DS from './designSystem'
 
-const lightTheme: Theme = {
+const lightTheme: ITheme = {
   designSystem: DS,
   backgroundColor: DS.colors.WhiteBg,
   invoiceBackgroundColor: DS.colors.white,
@@ -20,7 +20,7 @@ const lightTheme: Theme = {
   lightPurple_purple: DS.colors.lightPurple,
 }
 
-const darkTheme: Theme = {
+const darkTheme: ITheme = {
   designSystem: DS,
   backgroundColor: DS.colors.darkBlue,
   invoiceBackgroundColor: DS.colors.darkerPurple,

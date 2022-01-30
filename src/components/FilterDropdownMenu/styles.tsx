@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 import { headingThree } from '../helpers/FontComponents/styles'
 
-interface Props {
+interface IProps {
   visible: boolean
 }
 
-export const Dropdown = styled.div<Props>`
+export const Dropdown = styled.div<IProps>`
   position: relative;
 
   button {
@@ -43,7 +43,7 @@ export const Dropdown = styled.div<Props>`
   }
 `
 
-export const DropdownMenu = styled.div<Props>`
+export const DropdownMenu = styled.div<IProps>`
   position: absolute;
   z-index: 100;
   display: flex;

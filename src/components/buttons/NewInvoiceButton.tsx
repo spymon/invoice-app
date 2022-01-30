@@ -1,10 +1,10 @@
 import { H3 } from '../helpers/FontComponents/styles'
 
-interface Props {
+interface IProps {
   className?: string
 }
 
-const NewInvoiceButton: React.FC<Props> = ({ className }) => {
+const NewInvoiceButton: React.FC<IProps> = ({ className }) => {
   return (
     <button className={className}>
       <div>

@@ -3,11 +3,11 @@ import InvoiceHeader from '../InvoiceHeader'
 import InvoiceList from '../InvoiceList'
 import { Wrapper } from './styles'
 
-interface Props {
+interface IProps {
   className?: string
 }
 
-const InvoiceContainer: React.FC<Props> = ({ className }) => {
+const InvoiceContainer: React.FC<IProps> = ({ className }) => {
   return (
     <Wrapper className={className}>
       <InvoiceHeader />

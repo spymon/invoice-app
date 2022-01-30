@@ -2,11 +2,11 @@ import React from 'react'
 import { Status } from '../../types/types'
 import { StatusBlock, StatusDot, StatusText } from './styles'
 
-interface Props {
+interface IProps {
   status: Status
 }
 
-const InvoiceStatus: React.FC<Props> = ({ status }) => {
+const InvoiceStatus: React.FC<IProps> = ({ status }) => {
   return (
     <StatusBlock status={status}>
       <StatusDot status={status}></StatusDot>

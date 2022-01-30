@@ -29,7 +29,7 @@ interface IItem {
   total: number
 }
 
-export interface Theme {
+export interface ITheme {
   designSystem: {}
   backgroundColor: string
   invoiceBackgroundColor: string

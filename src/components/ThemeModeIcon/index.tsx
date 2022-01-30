@@ -1,13 +1,13 @@
 import React from 'react'
 
-interface Props {
+interface IProps {
   className?: string
   themeMode: boolean
   handleThemeMode: () => void
   onClick?: React.MouseEventHandler<HTMLElement>
 }
 
-const ThemeIcon: React.FC<Props> = ({
+const ThemeIcon: React.FC<IProps> = ({
   themeMode,
   handleThemeMode,
   className,

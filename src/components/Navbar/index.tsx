@@ -3,12 +3,12 @@ import { LogoWrapper, NavbarWrapper, Rectangle, StyledNavbar } from './styles'
 import avatar from './../../assets/image-avatar.jpg'
 import { StyledThemeIcon } from '../ThemeModeIcon/style'
 
-interface Props {
+interface IProps {
   themeMode: boolean
   handleThemeMode: () => void
 }
 
-const Navbar: React.FC<Props> = ({ themeMode, handleThemeMode }) => {
+const Navbar: React.FC<IProps> = ({ themeMode, handleThemeMode }) => {
   return (
     <>
       <StyledNavbar>

@@ -12,11 +12,11 @@ import {
 import arrowRightIcon from '../../assets/icon-arrow-right.svg'
 import { IInvoice } from '../../types/interfaces'
 
-interface Props {
+interface IProps {
   invoice: IInvoice
 }
 
-const Invoice: FC<Props> = ({ invoice }) => {
+const Invoice: FC<IProps> = ({ invoice }) => {
   const { id, paymentDue, clientName, total, status } = invoice
 
   return (

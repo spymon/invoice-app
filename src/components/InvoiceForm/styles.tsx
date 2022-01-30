@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { headingTwo1 } from '../helpers/FontComponents/styles'
+import { headingThree, headingTwo1 } from '../helpers/FontComponents/styles'
 
 export const Overlay = styled.div`
   position: absolute;
@@ -27,4 +27,20 @@ export const InvoiceFormHeader = styled.h2`
   ${headingTwo1}
   color: ${props => props.theme.mainFontColor};
   transition: ${props => props.theme.designSystem.transition};
+  margin-bottom: 48px;
+`
+
+export const FormSection = styled.div`
+  margin-bottom: 48px;
+`
+
+export const FormSectionTitle = styled.div`
+  ${headingThree}
+  color: ${props => props.theme.designSystem.colors.purple};
+  margin-bottom: 24px;
+`
+
+export const FormWrapper = styled.div`
+  display: flex;
+  gap: 24px;
 `

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { Status } from '../../types/types'
 import { headingThree } from '../helpers/FontComponents/styles'
 
-interface Props {
+interface IProps {
   status: Status
 }
 
@@ -19,7 +19,7 @@ const pickColor = (props: any) => {
   }
 }
 
-export const StatusBlock = styled.div<Props>`
+export const StatusBlock = styled.div<IProps>`
   position: relative;
   width: 104px;
   height: 40px;
@@ -42,7 +42,7 @@ export const StatusBlock = styled.div<Props>`
   }
 `
 
-export const StatusDot = styled.div<Props>`
+export const StatusDot = styled.div<IProps>`
   width: 8px;
   height: 8px;
   margin-right: 8px;
@@ -50,7 +50,7 @@ export const StatusDot = styled.div<Props>`
   background-color: ${props => pickColor(props)};
 `
 
-export const StatusText = styled.h3<Props>`
+export const StatusText = styled.h3<IProps>`
   ${headingThree};
   color: ${props => pickColor(props)};
 `
